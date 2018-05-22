@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <mat-card-header>
+        <mat-card-title>
+            <h4>
+                Tareas
+            </h4>
+        </mat-card-title>
+    </mat-card-header>
+</mat-toolbar>
+<mat-card>
+    <div>
+    <mat-card-content>
+        <mat-list>
+                    <div *ngFor = "let task of apiService.tasks.tasks" >
+                        <mat-card style=" cursor: pointer" >
+                            {{task.taskName}} ,
+                                {{task.date}} 
+                        </mat-card>
+                    </div>
+                
+        </mat-list>
+    </mat-card-content>
+    </div>
+</mat-card>

@@ -1,0 +1,3 @@
+<div *ngFor = "let Subject of apiService.subjects">
+    <mat-card [routerLink] = "['/feature', Subject._id]" style=" cursor: pointer">{{Subject.subjectName}}</mat-card>
+</div>
